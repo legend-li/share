@@ -32,7 +32,6 @@
          console.log(document.readyState);
         if(document.readyState == "complete"){
         		console.log('done...');
-            k = true;
             document.getElementById('loading_id').getElementsByTagName('span')[0].style.width = (i < 70 ? i = 100 : j = 100) +"%";
             document.getElementById('wrap-loading').getElementsByTagName('p')[0].innerHTML = (i < 70 ? i = 100 : j = 100) +"%";
             	clearInterval(upTime);
