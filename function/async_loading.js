@@ -6,15 +6,14 @@
 */
 (function(){
 	/*
-	 *   style common
-	 *      #wrap-loading {position: relative;z-index: 99;width: 500px;margin: auto;top: 250px;}
-	 *		#data-number {padding: 10px;font-size: 20px;color: #29d;}
-	 *		#hide-wrap {position: fixed;width: 100%;height: 100%;top: 0px;background: #000000;opacity: 0.3;}
-	 *		.width: 300px;padding: 10px;border: 2px solid #29d;border-radius: 20px;float: left;margin-right: 10px;position: relative;} 
-	 *		.loading span {background: #29d;display: block;border-radius: 7px;height: 15px;width: 0%;}
-	 * 		Js Script need async :  async="async". This Script don't need async.
+	 *		#wrap-loading {position: absolute;z-index: 3147483649;width: 330px;margin: auto;display: flex;}
+	 *		#hide-wrap {position: fixed;width: 100%;height: 100%;top: 0px;    background: #fff;z-index: 3147483648;}
+	 *	        #data-number {padding: 10px;font-size: 20px;color: #ed7b49;}
+	 *	        .home_loading{width: 300px;padding: 10px;border: 2px solid #ed7b49;border-radius: 20px;margin:auto;position: relative;}
+	 *	        .home_loading span {background: #ed7b49;display: block;border-radius: 7px;height: 15px;width: 0%;}
+	 *		.number_div{width: 100px;}
+	 *		Js Script need async :  async="async". This Script don't need async.
 	 */
-	 
 	  console.log('loading...');
 	  document.write("<div id='hide-wrap'></div><div style='margin-top : 25%;' id='wrap-loading'><div id='loading_id' class='home_loading'><span></span></div><div class='number_div'><p id='data-number'></p></div></div>")
 			var i = 0,j = 30,k = false,upTime="";
