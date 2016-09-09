@@ -14,17 +14,19 @@
 	 *		.loading span {background: #29d;display: block;border-radius: 7px;height: 15px;width: 0%;}
 	 * 		Js Script need async :  async="async". This Script don't need async.
 	 */
-	
+	 
 	  console.log('loading...');
-	  document.write("<div id='hide-wrap'></div><div id='wrap-loading'><div id='loading_id' class='loading'><span></span></div><p id='data-number'>10%</p></div>")
-			var i = 0,j = 0,k = false;
-			var upTime = setInterval(function(){
-				document.getElementById('loading_id').getElementsByTagName('span')[0].style.width = (i < 70 ? i : j) +"%";
+	  document.write("<div id='hide-wrap'></div><div style='margin-top : 25%;' id='wrap-loading'><div id='loading_id' class='home_loading'><span></span></div><div class='number_div'><p id='data-number'></p></div></div>")
+			var i = 0,j = 30,k = false,upTime="";
+			 upTime = setInterval(function(){
+				document.getElementById('loading_id').getElementsByTagName('span')[0].style.width = i +"%";
 				document.getElementById('wrap-loading').getElementsByTagName('p')[0].innerHTML = i +"%";
-				i += 1,j += 0.5;
-				if(i == 70){
-					j = i;
-				}
+				console.log(i);
+				if(i >= 98){
+			    		i = 98;
+			    		return;
+			    }
+				i += 1;
 			},100);
       document.onreadystatechange = subSomething;
       function subSomething()
@@ -32,10 +34,10 @@
          console.log(document.readyState);
         if(document.readyState == "complete"){
         		console.log('done...');
-            document.getElementById('loading_id').getElementsByTagName('span')[0].style.width = (i < 70 ? i = 100 : j = 100) +"%";
-            document.getElementById('wrap-loading').getElementsByTagName('p')[0].innerHTML = (i < 70 ? i = 100 : j = 100) +"%";
-            	clearInterval(upTime);
-            	setTimeout(function(){
+            document.getElementById('loading_id').getElementsByTagName('span')[0].style.width =  100+"%";
+            document.getElementById('wrap-loading').getElementsByTagName('p')[0].innerHTML = 100 +"%";
+						clearInterval(upTime);
+            			setTimeout(function(){
             		 	document.getElementById('hide-wrap').remove();
             			document.getElementById('wrap-loading').remove();
             	},1000);
