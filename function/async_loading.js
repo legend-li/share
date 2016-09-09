@@ -17,7 +17,7 @@
 	  console.log('loading...');
 	  document.write("<div id='hide-wrap'></div><div style='margin-top : 25%;' id='wrap-loading'><div id='loading_id' class='home_loading'><span></span></div><div class='number_div'><p id='data-number'></p></div></div>")
 			var i = 0,j = 30,k = false,upTime="";
-			 upTime = setInterval(function(){
+			upTime = setInterval(function(){
 				document.getElementById('loading_id').getElementsByTagName('span')[0].style.width = i +"%";
 				document.getElementById('wrap-loading').getElementsByTagName('p')[0].innerHTML = i +"%";
 				console.log(i);
