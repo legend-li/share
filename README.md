@@ -6,4 +6,4 @@ AngularScript in angular_function folder
 
 
 
-o(*≧▽≦)ツ
+o(*≧▽≦)o
