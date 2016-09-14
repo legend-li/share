@@ -16,7 +16,8 @@
 	 */
 	//  console.log('loading...');
 	  document.write("<div id='hide-wrap'></div><div style='margin-top : 25%;' id='wrap-loading'><div id='loading_id' class='home_loading'><span></span></div><div class='number_div'><p id='data-number'></p></div></div>")
-			var i = 0,j = 30,k = false,d = 1,upTime="",navigatorName = "Microsoft Internet Explorer",navigatorName11 = "Netscape";
+			var i = 0,j = 30,k = false,d = 1,upTime="";  
+			// userAgent = navigator.userAgent , isOpera = userAgent.indexOf("Opera") > -1;
 			upTime = setInterval(function(){
 				document.getElementById('loading_id').getElementsByTagName('span')[0].style.width = i +"%";
 				document.getElementById('wrap-loading').getElementsByTagName('p')[0].innerHTML = i +"%";
@@ -37,11 +38,12 @@
         	    			clearInterval(upTime);
         	    			clearInterval(endTime);
         	    			setTimeout(function(){
-        	    			if(navigator.appName == navigatorName || navigator.appName == navigatorName11){
+        	    				//userAgent.indexOf("compatible") > -1 && userAgent.indexOf("MSIE") > -1 && !isOpera ||
+        	    			if(!!window.ActiveXObject || "ActiveXObject" in window){
         	    				document.getElementById('hide-wrap').removeNode(true);
         	    				document.getElementById('wrap-loading').removeNode(true);
         	    			}else{
-        	    				document.getElementById('hide-wrap').remove();
+        	    					document.getElementById('hide-wrap').remove();
             					document.getElementById('wrap-loading').remove();
         	    			}
            		 	},100);
