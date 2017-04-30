@@ -45,7 +45,7 @@ cat.eat('fish');
 //     if(!json[str.charAt(i)]){
 //         json[str.charAt(i)] = 1;
 //     }else{
-//         json[str.charAt(i)]++4
+//         json[str.charAt(i)]++
 //     }
 // }
 //
