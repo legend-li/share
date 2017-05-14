@@ -82,7 +82,7 @@ cat.eat('fish')
 // var s = [1,2,3,4,4,4,4,5,5,5,2,2];
 //
 // for(var i=0,o={},tmp=[],count=0,l=s.length;i<l;i++){
-//     if(o[s[i]]){22
+//     if(o[s[i]]){223
 //         count++
 //     }else{
 //         o[s[i]] =1;
