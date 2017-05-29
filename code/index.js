@@ -39,7 +39,7 @@ cat.eat('fish');
 //出现的最多次数
 
 // var str = 'asdsfdasdsadsaddddddd';
-// var json = {};23344552133213
+// var json = {};233445521332132
 //
 // for(var i =0;i < str.length; i ++){
 //     if(!json[str.charAt(i)]){
