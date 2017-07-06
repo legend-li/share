@@ -1,9 +1,9 @@
-
+﻿
 <h1 style="font-size: 40px;text-align:center;color: #007cdc;">
     Nodejs环境配置（以Windows为例）
 </h1>
 
-## 1.下载安装
+## 1.先下载安装
 访问[nodejs](https://nodejs.org/)下载并安装，一路next即可。
 
 ## 2.配置环境变量
