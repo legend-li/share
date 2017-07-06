@@ -1,4 +1,4 @@
-#Git使用教程*-file  = 文件名                                                ##设置用户名和邮箱```不设置无法提交```> git config --global user.name ""> git config --global user.email ""##进入目录后，把目录变成Git可管理的仓库(工作区)> git init######//变成可管理库后会出现.git文件，如果没有 请输入>ls -al##Git分为工作区、暂存区、历史区三个部分，通过输入以下命令，把文件添加到暂存区>git add fileName(-A)##输入以下命令，提交到历史区里面>git commit -m"本次提交描述"##克隆项目>git clone 仓库地址##查看git仓库历史记录>git log##流程0.clone 项目，修改工作区。  1.通过git add fileName(如果需要全部提交则替换成 -A) 提交到暂存区。2.通过git commit -m"描述" 提交到历史区。  3.最后通过 git push origin master 提交到服务器。  4.发一个pull request  ##push速度太慢的解决办法1.需要SSH来连接git服务器，使用以下命令  >ssh -v git@git-server2.之后打开/etc/ssh/ssh_config  3.找到 GSSAPIAuthentication no 这句话，将#删掉  >服务器端启用了GSSAPI。登陆的时候客户端需要对服务器端的IP地址进行反解析，如果服务器的IP地址没有配置PTR记录，那么就容易在这里卡住了。 >是否允许使用基于 GSSAPI 的用户认证。默认值为"no"。仅用于SSH-2。
+﻿#Git使用教程*-file  = 文件名                                                ##设置用户名和邮箱```不设置无法提交```> git config --global user.name ""> git config --global user.email ""##进入目录后，把目录变成Git可管理的仓库(工作区)> git init######//变成可管理库后会出现.git文件，如果没有 请输入>ls -al##Git分为工作区、暂存区、历史区三个部分，通过输入以下命令，把文件添加到暂存区>git add fileName(-A)##输入以下命令，提交到历史区里面>git commit -m"本次提交描述"##克隆项目>git clone 仓库地址##查看git仓库历史记录>git log##流程0.clone 项目，修改工作区。  1.通过git add fileName(如果需要全部提交则替换成 -A) 提交到暂存区。2.通过git commit -m"描述" 提交到历史区。  3.最后通过 git push origin master 提交到服务器。  4.发一个pull request  ##push速度太慢的解决办法1.需要SSH来连接git服务器，使用以下命令  >ssh -v git@git-server2.之后打开/etc/ssh/ssh_config  3.找到 GSSAPIAuthentication no 这句话，将#删掉  >服务器端启用了GSSAPI。登陆的时候客户端需要对服务器端的IP地址进行反解析，如果服务器的IP地址没有配置PTR记录，那么就容易在这里卡住了。 >是否允许使用基于 GSSAPI 的用户认证。默认值为"no"。仅用于SSH-2。
 ##添加```git add 的各种区别```>git add -A   // 添加所有改动>git add *     // 添加新建文件和修改，但是不包括删除>git add .    // 添加新建文件和修改，但是不包括删除>git add -u   // 添加修改和删除，但是不包括新建文件
 ```在commit前撤销add```>git reset -file // 撤销提交单独文件>git reset        // unstage all due changes##修改```查看修改过但未提交的文件```>git status```查看修改内容```>git diff -file
 
@@ -35,7 +35,7 @@
 
 >rm -file
 
-```两种选择  ```
+```有两种选择  ```
 
 ```1.一是确实要从版本库中删除该文件，那就用命令git rm删掉，并且git commit```
 >git rm -file
