@@ -1,8 +1,8 @@
-<h1 style="font-size: 40px;text-align:center;color: #007cdc;">
+﻿<h1 style="font-size: 40px;text-align:center;color: #007cdc;">
     Git和Github学习
 </h1>
 
-## 1.创建版本库
+## 1.先创建版本库
 
 - 安装git，至于这个话题就不细说了，按照你电脑的操作系统下载一个合适的git，需要注意的是，配置好环境变量，以便全局可以使用git命令。
 - 那么，接下来就开始打开你的git bash吧，如果愿意，不妨设置一下你的git bash的界面外观，至少自己看着舒服，写码都感觉是件很愉悦的事情，对吧。
