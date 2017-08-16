@@ -47,7 +47,18 @@
 
 ```第1步：创建SSH Key。在用户主目录下，看看有没有.ssh目录，如果有，再看看这个目录下有没有id_rsa和id_rsa.pub这两个文件```
 ```如果已经有了，可直接跳到下一步。如果没有，打开Shell（Windows下打开Git Bash），创建SSH Key```
-> ssh-keygen -t rsa -C "youremail@example.com"
+> ssh-keygen -t rsa -C "youremail@example.com"  
+
+```创建后拿到rsa.pub公钥去GitHub设置ssh```
+```设置后测试是否连接成功```
+>ssh git@github.com
+
+```然后更改项目url文件，然后push```   
+ 
+
+> url = git@github.com:项目路径
+
+```就可以不用验证啦```  
 
 ```第二部本地关联git库，或者从git库克隆新的库到本地```
  
@@ -55,6 +66,8 @@
 
 >git push -u origin master //第一次加-u 是关联master分支，为以后推送拉取简化命令
 
+```拉取readme文件```
+>git pull --rebase origin master
 ```删除本地关联git库```
 >git remote remove origin
 
