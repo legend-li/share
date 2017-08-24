@@ -19,6 +19,7 @@
 ```查看工作区和版本库里最新版本的区别```
 >git diff HEAD -- -file
 
+
 ##回退
 ```版本用HEAD表示，上一个版本就是HEAD^ ，上上个版本就是HEAD^^ 上一百个就是HEAD~100```
 >git reset --hard HEAD^
