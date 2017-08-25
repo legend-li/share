@@ -60,8 +60,11 @@ $ node --v8-options | grep harmony
 ## Module
 
 ### 严格模式
+'use strict'
 ### export命令
+module.exporst
 ### import命令
+import 'vue' from 'vue'
 ### 模块的整体加载
 ### module命令
 ### export default命令
