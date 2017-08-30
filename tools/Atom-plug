@@ -1,41 +1,58 @@
 autocomplete-paths
 文件路径自动提示
+
 linter和linter-jshint  - 配置 .jshintrc
 代码检查工具
+
 script
 js代码运行
+
 atom-beautify -  使用方法 = 命令行 beautify
 代码格式化
+
 jquery-snippets
 jquery代码提示
+
 autoprefixer
 css浏览器兼容 -  使用方法 = 命令行 auto
+
 color-picker
 取色器
+
 css-snippets
 css,scss,sass,less 提示
+
 activate-power-mode
 代码在跳舞
+
 file-icons
 漂亮图标
+
 highlight-selected
 选择高亮
+
  language-babel
 jsx语法
+
 open-in-browser
 在浏览器打开 - 快捷键 ctrl + shift + q
+
  file-header
 给当前编辑文件添加用户时间等头部信息
+
 atom-ternjs
 nodejs,es6补全
+
 regex-railroad-diagram
 正则表达式图形化显示
+
 git-log
 图形化提交git记录
+
 draw-package
 文件里画图形
-atom-ternjs
 
+atom-ternjs
 该插件能对一个对象中拥有的对外提供的属性和方法都能通过suggest的形式提示出来，能对一个对象对外提供的接口有一个选择过程
- 
+
 常用atom使用工具，请直接批量下载
