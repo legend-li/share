@@ -1,3 +1,10 @@
+/**
+ * @Date:   2017-08-28T15:40:08+08:00
+ * @Last modified time: 2017-08-28T17:17:51+08:00
+ */
+
+
+
 'usc strict'
 //继承
 
@@ -84,6 +91,3 @@ cat.eat('fish')
 // }
 // console.log(count);
 // console.log(tmp)
-
-
-
